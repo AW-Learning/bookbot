@@ -23,3 +23,18 @@ def get_num_char(text1):
             char_list.add(char.lower())
     '''
     return total_count
+
+def get_report(location,num_words,num_char):
+    new_char = sorted(num_char)
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at {location}...")
+    print("----------- Word Count ----------")
+    print(f"Found {num_words} total words")
+    print("--------- Character Count -------")
+    for key in sorted(num_char, key=num_char.get, reverse=True):
+        if key.isalpha():
+            print(f"{key}: {num_char[key]}")
+    print("============= END ===============")
+    '''
+    for key, value in new_char.items():
+    '''
