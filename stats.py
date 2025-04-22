@@ -17,11 +17,6 @@ def get_num_char(text1):
             if char == ch:
                 count += 1
         total_count[ch] = count
-    '''
-    for word in word_list:
-        for char in word:
-            char_list.add(char.lower())
-    '''
     return total_count
 
 def get_report(location,num_words,num_char):
@@ -35,6 +30,3 @@ def get_report(location,num_words,num_char):
         if key.isalpha():
             print(f"{key}: {num_char[key]}")
     print("============= END ===============")
-    '''
-    for key, value in new_char.items():
-    '''
